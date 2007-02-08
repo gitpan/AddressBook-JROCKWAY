@@ -1,0 +1,9 @@
+    <b>[% address.location | html  %]</b>
+    <a href="[% Catalyst.uri_for("/address/edit/$address.id") %]">
+    Edit</a>
+    <a href="[% Catalyst.uri_for("/address/delete/$address.id") %]">
+    Delete</a>
+    <br />
+    <address>[% address.postal | html | html_line_break %]</address>
+    Phone: [% address.phone | html %]<br />
+    Email: [% address.email | html %]<br />

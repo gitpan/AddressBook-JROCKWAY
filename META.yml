@@ -1,0 +1,32 @@
+abstract: ~
+build_requires: 
+  SQL::Translator: 0
+distribution_type: module
+generated_by: Module::Install version 0.64
+license: unknown
+name: AddressBook
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Catalyst: 5.7006
+  Catalyst::Action::RenderView: 0
+  Catalyst::Controller::BindLex: 0
+  Catalyst::Controller::FormBuilder: 0
+  Catalyst::Model::DBIC::Schema: 0
+  Catalyst::Plugin::Authentication: 0
+  Catalyst::Plugin::Authentication::Credential::Password: 0
+  Catalyst::Plugin::Authentication::Store::DBIC: 0
+  Catalyst::Plugin::Authorization::ACL: 0
+  Catalyst::Plugin::Authorization::Roles: 0
+  Catalyst::Plugin::ConfigLoader: 0
+  Catalyst::Plugin::Session: 0
+  Catalyst::Plugin::Session::State::Cookie: 0
+  Catalyst::Plugin::Session::Store::DBIC: 0
+  Catalyst::Plugin::Static::Simple: 0
+  Catalyst::View::TT: 0
+  DBD::SQLite: 0
+  Data::Page: 0
+  YAML: 0
+version: 0.03

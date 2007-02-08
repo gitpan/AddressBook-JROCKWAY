@@ -1,0 +1,5 @@
+---
+name: AddressBook
+Model::AddressDB:
+  connect_info:
+    - DBI:SQLite:__HOME__/database

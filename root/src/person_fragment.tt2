@@ -1,0 +1,11 @@
+  [% person.name | html %]
+  <a href="[% Catalyst.uri_for("/address/add/$person.id") | html %]">Add address</a>
+  <a href="[% Catalyst.uri_for("/person/edit/$person.id") | html %]">Edit</a>
+  <a href="[% Catalyst.uri_for("/person/delete/$person.id") | html %]">Delete</a>
+
+  [% SET addresses = person.addresses %]
+  <ul>
+  [% FOREACH address = addresses %]
+   <li>[% INCLUDE address_fragment.tt2 %]</li>
+  [% END %]
+  </ul>
